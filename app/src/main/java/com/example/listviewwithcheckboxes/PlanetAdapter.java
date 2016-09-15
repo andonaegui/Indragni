@@ -13,10 +13,10 @@ import android.widget.TextView;
 class Planet {
 	
 	String name;
-	int distance;
+	String distance;
 	boolean selected = false;
 	
-	public Planet(String name, int distance) {
+	public Planet(String name, String distance) {
 		super();
 		this.name = name;
 		this.distance = distance;
@@ -30,11 +30,11 @@ class Planet {
 		this.name = name;
 	}
 
-	public int getDistance() {
+	public String getDistance() {
 		return distance;
 	}
 
-	public void setDistance(int distance) {
+	public void setDistance(String distance) {
 		this.distance = distance;
 	}
 

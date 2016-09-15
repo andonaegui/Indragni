@@ -27,11 +27,16 @@ public class MainActivity extends ActionBarActivity implements
 	private void displayPlanetList() {
 
 		planetList = new ArrayList<Planet>();
-		planetList.add(new Planet("Mercury", 57000000));
-		planetList.add(new Planet("Venus", 23700000));
-		planetList.add(new Planet("Mars", 35000000));
-		planetList.add(new Planet("Jupiter", 5000000));
-		planetList.add(new Planet("Saturn", 746000000));
+		planetList.add(new Planet("Mercury", "57000000"));
+		planetList.add(new Planet("Venus", "23700000"));
+		planetList.add(new Planet("Mars", "35000000"));
+		planetList.add(new Planet("Jupiter", "5000000"));
+		planetList.add(new Planet("Saturn", "746000000"));
+		//planetList.add(new Planet("Angular", 5));
+		//Cambio de variable para aceptar string
+		planetList.add(new Planet("CocaCola", "Rica"));
+
+
 
 		plAdapter = new PlanetAdapter(planetList, this);
 		lv.setAdapter(plAdapter);
