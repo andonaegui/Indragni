@@ -11,6 +11,7 @@ import android.widget.Toast;
 public class MainActivity extends ActionBarActivity implements
 		android.widget.CompoundButton.OnCheckedChangeListener {
 
+	//Declaraciones
 	ListView lv;
 	ArrayList<Planet> planetList;
 	PlanetAdapter plAdapter;
@@ -19,7 +20,6 @@ public class MainActivity extends ActionBarActivity implements
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
-
 		lv = (ListView) findViewById(R.id.listview);
 		displayPlanetList();
 	}
@@ -29,9 +29,9 @@ public class MainActivity extends ActionBarActivity implements
 		planetList = new ArrayList<Planet>();
 		planetList.add(new Planet("Fideos Di Maria", "Especial para arrugar en los momentos claves"));
 		planetList.add(new Planet("Hector, el Constructor", "Trabajador multifacetico de Angular. Si llama dentro de los próximos minutos" +
-				"vendrá con una silla y mesa de regalo"));
+				" vendrá con una silla y mesa de regalo"));
 		planetList.add(new Planet("Chevrolet Aveo 2010 LT", "Con llantas, aire acondicionado y doble airbag. Sistema de frenos ABS" +
-				"con detalles menores en las puertas por piquetes de mall"));
+				" con detalles menores en las puertas por piquetes de mall"));
 		planetList.add(new Planet("Iván Vodanovic, the Lawyer", "Reconocido abogado del buffet Phoenix Right te dirá... Objection!"));
 		planetList.add(new Planet("Libro de Rol. Werewolf; The Apocalypse 2d edition Deluxe", "El apocalipsis ha llegado " +
 				"bajo la luna de sangre del Wyrm "));
@@ -45,14 +45,14 @@ public class MainActivity extends ActionBarActivity implements
 
 	@Override
 	public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-
+		//Toast variable dependiendo del checkbutton selecionado. Muestra su text principal
 		int pos = lv.getPositionForView(buttonView);
 		if (pos != ListView.INVALID_POSITION) {
 			Planet p = planetList.get(pos);
 			p.setSelected(isChecked);
 			Toast.makeText(
 					this,
-					"Clicked on Planet: " + p.getName() + ". State: is "
+					"Product selected: " + p.getName() + ". State: is "
 							+ isChecked, Toast.LENGTH_SHORT).show();
 		}
 	}

@@ -1,7 +1,6 @@
 package com.example.listviewwithcheckboxes;
 
 import java.util.List;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,7 +10,7 @@ import android.widget.CheckBox;
 import android.widget.TextView;
 
 class Planet {
-	
+	//Modificamos el tipo de datos de Integer distance a String.
 	String name;
 	String distance;
 	boolean selected = false;
@@ -25,23 +24,18 @@ class Planet {
 	public String getName() {
 		return name;
 	}
-
 	public void setName(String name) {
 		this.name = name;
 	}
-
 	public String getDistance() {
 		return distance;
 	}
-
 	public void setDistance(String distance) {
 		this.distance = distance;
 	}
-
 	public boolean isSelected() {
 		return selected;
 	}
-
 	public void setSelected(boolean selected) {
 		this.selected = selected;
 	}
@@ -51,8 +45,10 @@ public class PlanetAdapter extends ArrayAdapter<Planet>{
 
 	private List<Planet> planetList;
 	private Context context;
-	
+
+	//Contexto contexto, int recurso
 	public PlanetAdapter(List<Planet> planetList, Context context) {
+		//En el SLI están los elementos: Text primario, Text secundario y Check button
 		super(context, R.layout.single_listview_item, planetList);
 		this.planetList = planetList;
 		this.context = context;
@@ -68,9 +64,7 @@ public class PlanetAdapter extends ArrayAdapter<Planet>{
 	public View getView(int position, View convertView, ViewGroup parent) {
 	
 		View v = convertView;
-		
 		PlanetHolder holder = new PlanetHolder();
-		
 		if(convertView == null) {
 			
 			LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -79,7 +73,6 @@ public class PlanetAdapter extends ArrayAdapter<Planet>{
 			holder.planetName = (TextView) v.findViewById(R.id.name);
 			holder.distView = (TextView) v.findViewById(R.id.dist);
 			holder.chkBox = (CheckBox) v.findViewById(R.id.chk_box);
-			
 			holder.chkBox.setOnCheckedChangeListener((MainActivity) context);
 			
 		} else {
