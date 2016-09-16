@@ -28,8 +28,9 @@ public class MainActivity extends ActionBarActivity implements
 
 		planetList = new ArrayList<Planet>();
 		planetList.add(new Planet("Fideos Di Maria", "Especial para arrugar en los momentos claves"));
-		planetList.add(new Planet("Hector, el Constructor", "Trabajador multifacetico de Angular. Si llama dentro de los próximos minutos" +
-				" vendrá con una silla y mesa de regalo"));
+		planetList.add(new Planet("Hector, el Constructor", "Trabajador multifacetico de Angular. Corta, pica, rebana y hace papasfritas." +
+				" Si llama dentro de los próximos minutos" +
+				" vendrá con una silla y mesa de regalo. Si se atrasa con un tornillo debes ayudarle. "));
 		planetList.add(new Planet("Chevrolet Aveo 2010 LT", "Con llantas, aire acondicionado y doble airbag. Sistema de frenos ABS" +
 				" con detalles menores en las puertas por piquetes de mall"));
 		planetList.add(new Planet("Iván Vodanovic, the Lawyer", "Reconocido abogado del buffet Phoenix Right te dirá... Objection!"));

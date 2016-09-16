@@ -4,12 +4,12 @@
     api-level="21"
     density="xxhdpi"
     format="7"
-    timestamp="357308490841045"
+    timestamp="357990006689006"
     token="6782994126942062748" >
 
     <task
         name="javac"
-        duration="479" />
+        duration="378" />
     <task
         name="instant-run-dex"
         duration="0" />
@@ -24,7 +24,7 @@
         location="F:\PAS\Downloaded\CLV\Indra1\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="357308490841045" >
+    <build timestamp="357990006689006" >
         <artifact
             location="F:\PAS\Downloaded\CLV\Indra1\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
