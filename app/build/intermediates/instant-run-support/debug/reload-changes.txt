@@ -1,4 +1,2 @@
-CHANGED,F:\PAS\Downloaded\CLV\Indra1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\listviewwithcheckboxes\PlanetAdapter$override.class
 CHANGED,F:\PAS\Downloaded\CLV\Indra1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\listviewwithcheckboxes\MainActivity$override.class
 CHANGED,F:\PAS\Downloaded\CLV\Indra1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
-CHANGED,F:\PAS\Downloaded\CLV\Indra1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\listviewwithcheckboxes\Planet$override.class

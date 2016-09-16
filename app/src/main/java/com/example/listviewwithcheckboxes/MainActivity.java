@@ -27,16 +27,17 @@ public class MainActivity extends ActionBarActivity implements
 	private void displayPlanetList() {
 
 		planetList = new ArrayList<Planet>();
-		planetList.add(new Planet("Mercury", "57000000"));
-		planetList.add(new Planet("Venus", "23700000"));
-		planetList.add(new Planet("Mars", "35000000"));
-		planetList.add(new Planet("Jupiter", "5000000"));
-		planetList.add(new Planet("Saturn", "746000000"));
-		//planetList.add(new Planet("Angular", 5));
-		//Cambio de variable para aceptar string
-		planetList.add(new Planet("CocaCola", "Rica"));
-
-
+		planetList.add(new Planet("Fideos Di Maria", "Especial para arrugar en los momentos claves"));
+		planetList.add(new Planet("Hector, el Constructor", "Trabajador multifacetico de Angular. Si llama dentro de los próximos minutos" +
+				"vendrá con una silla y mesa de regalo"));
+		planetList.add(new Planet("Chevrolet Aveo 2010 LT", "Con llantas, aire acondicionado y doble airbag. Sistema de frenos ABS" +
+				"con detalles menores en las puertas por piquetes de mall"));
+		planetList.add(new Planet("Iván Vodanovic, the Lawyer", "Reconocido abogado del buffet Phoenix Right te dirá... Objection!"));
+		planetList.add(new Planet("Libro de Rol. Werewolf; The Apocalypse 2d edition Deluxe", "El apocalipsis ha llegado " +
+				"bajo la luna de sangre del Wyrm "));
+		planetList.add(new Planet("CocaCola", "300cc Edición navideña con nombres"));
+		planetList.add(new Planet("Angular. Alonso de Cordoba Six Six Six the number of " +
+				"the beast", "Sin lactosa. Alto en proteinas y con vitaminas A, B y C. No contiene gluten y con 0% de materia grasa"));
 
 		plAdapter = new PlanetAdapter(planetList, this);
 		lv.setAdapter(plAdapter);
@@ -49,7 +50,6 @@ public class MainActivity extends ActionBarActivity implements
 		if (pos != ListView.INVALID_POSITION) {
 			Planet p = planetList.get(pos);
 			p.setSelected(isChecked);
-
 			Toast.makeText(
 					this,
 					"Clicked on Planet: " + p.getName() + ". State: is "

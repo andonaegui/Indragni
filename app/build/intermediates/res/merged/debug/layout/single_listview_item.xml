@@ -7,22 +7,30 @@
         android:id="@+id/chk_box"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:scaleX="1.4"
+        android:scaleY="1.4"
+        android:layout_centerVertical="true"
         android:layout_alignParentRight="true" />
     
     <TextView
         android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
 
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
         android:textStyle="bold" />
     
     <TextView
         android:id="@+id/dist"
-        android:layout_width="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+
+        android:layout_width="325dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/name"
 
         android:textSize="12sp"
         android:textStyle="italic" />
-
 </RelativeLayout>

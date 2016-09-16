@@ -4,27 +4,27 @@
     api-level="21"
     density="xxhdpi"
     format="7"
-    timestamp="287278920666024"
+    timestamp="348897310621784"
     token="6782994126942062748" >
 
     <task
         name="javac"
-        duration="740" />
+        duration="483" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="172" />
+        duration="137" />
     <task
         name="verifier"
-        duration="17" />
+        duration="6" />
 
     <artifact
         location="F:\PAS\Downloaded\CLV\Indra1\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="287278920666024" >
+    <build timestamp="348897310621784" >
         <artifact
             location="F:\PAS\Downloaded\CLV\Indra1\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
